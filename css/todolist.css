@@ -1,0 +1,236 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans', 'Baloo 2';
+  color: #333;
+  font-size: 16px;
+  line-height: 24px;
+  background: no-repeat linear-gradient(174deg, #FFD370 2%, #FFD370 46%, #FFFFFF 46%, #FFFFFF 100%, #E8E8E8 100%);
+}
+
+.wrap {
+  max-width: 500px;
+  margin: 48px auto;
+}
+
+.wrap h1 {
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 8.75px;
+  line-height: 82px;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.space {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .enter {
+  padding: 12px 24px;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  width: 90%;
+  outline: none;
+}
+
+.container .enter::-webkit-input-placeholder {
+  color: #9f9a91;
+}
+
+.container .enter:-ms-input-placeholder {
+  color: #9f9a91;
+}
+
+.container .enter::-ms-input-placeholder {
+  color: #9f9a91;
+}
+
+.container .enter::placeholder {
+  color: #9f9a91;
+}
+
+.container .save {
+  margin: 4px;
+  padding: 0;
+  font-size: 32px;
+  line-height: 100%;
+  color: #fff;
+  background: #333333;
+  border: 0px;
+  border-radius: 10px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filter li {
+  width: 33.33%;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.7px;
+  border-bottom: 2px solid #efefef;
+  cursor: pointer;
+}
+
+.filter li:hover {
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+  background-color: #E8E8E8;
+}
+
+.list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.list li .check {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.list li p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 76%;
+  border-bottom: 1px solid #efefef;
+}
+
+.list li .del {
+  font-size: 32px;
+  margin: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.list li .del:hover {
+  color: #333;
+}
+
+.list .done .check {
+  margin: 27px 24px;
+  width: 12px;
+  height: 6px;
+  border-width: 0 0 2px 2px;
+  border-color: #FFD370;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.list .done p {
+  color: rgba(51, 51, 51, 0.3);
+  text-decoration: line-through;
+}
+
+.footer {
+  margin: 24px;
+  margin-right: 48px;
+}
+
+.footer .clear {
+  margin-bottom: 32px;
+  border: 0;
+  background: #fff;
+  cursor: pointer;
+}
+
+.footer .clear:hover {
+  font-weight: bold;
+}
+/*# sourceMappingURL=todolist.css.map */
